@@ -6,7 +6,7 @@ set -e
 ## -----------------------------------------------
 
 cd /
-git clone git@github.com:apache/thrift.git
+git clone https://github.com/apache/thrift.git
 cd thrift
 git checkout 0.9.3
 
@@ -22,7 +22,6 @@ echo "OpenSSL dir $OPENSSL_DIR"
 ## -----------------------------------------------
 
 (
-    cd $THRIFT_DIR
     if [ ! -f Makefile ]; then
         ./bootstrap.sh
         ./configure \

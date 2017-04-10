@@ -6,9 +6,9 @@ set -e
 ## -----------------------------------------------
 
 cd /
-git clone https://github.com/apache/thrift.git
-cd thrift
-git checkout 0.9.3
+wget https://github.com/apache/thrift/archive/0.9.3.tar.gz
+tar -xvzf 0.9.3.tar.gz
+cd thrift-0.9.3
 
 ## -----------------------------------------------
 ## - Set open SSL path

@@ -1,6 +1,22 @@
 FROM bitriseio/android-ndk:latest
 
-RUN apt-get -y update && apt-get install -y libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libevent-dev automake libtool flex bison pkg-config g++ libssl-dev awscli && apt-get -y clean
+RUN apt-get -y update && \
+    apt-get install -y \
+      libboost-dev \
+      libboost-test-dev \
+      libboost-program-options-dev \
+      libboost-filesystem-dev \
+      libboost-thread-dev \
+      libevent-dev \
+      automake \
+      libtool \
+      flex \
+      bison \
+      pkg-config \
+      g++ \
+      libssl-dev \
+      awscli && \
+    apt-get -y clean
 
 RUN cd / && wget https://github.com/apache/thrift/archive/0.9.3.tar.gz && \
     tar -xvzf 0.9.3.tar.gz && \

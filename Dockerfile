@@ -30,5 +30,5 @@ RUN cd / && wget https://github.com/apache/thrift/archive/0.9.3.tar.gz && \
             --without-go \
             --without-nodejs \
             --with-openssl=/usr && \
-    make && make install && cd / && rm -r /thrift-0.9.3
+    make && make install
 

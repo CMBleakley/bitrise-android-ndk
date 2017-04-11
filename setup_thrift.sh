@@ -5,7 +5,8 @@ set -e
 ## - Checkout thrift
 ## -----------------------------------------------
 
-cd /
+rm -r /tmp/*
+cd /tmp/
 wget https://github.com/apache/thrift/archive/0.9.3.tar.gz
 tar -xvzf 0.9.3.tar.gz
 cd thrift-0.9.3

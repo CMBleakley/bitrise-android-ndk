@@ -10,7 +10,7 @@ RUN apt-get -y update && \
       g++ \
       automake \
       awscli \
-      cmake
+      cmake \
       awscli && \
     apt-get -y clean
 

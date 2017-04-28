@@ -29,5 +29,3 @@ RUN mkdir /deps && cd /deps && wget https://github.com/apache/thrift/archive/0.9
       --with-openssl=/usr && \
     make && make install
 
-## Install openBlas at /deps
-RUN cd /deps && mkdir openBLAS

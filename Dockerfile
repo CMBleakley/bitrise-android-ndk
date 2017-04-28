@@ -6,6 +6,7 @@ RUN apt-get -y update && \
       libtool \
       bison \
       libssl-dev \
+      pkg-config \
       flex \
       g++ \
       automake \

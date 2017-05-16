@@ -14,19 +14,3 @@ RUN apt-get -y update && \
       cmake \
       awscli && \
     apt-get -y clean
-
-## Install thrift at /deps
-RUN mkdir /deps && cd /deps && wget https://github.com/apache/thrift/archive/0.9.3.tar.gz && \
-    tar -xvzf 0.9.3.tar.gz && \
-    rm 0.9.3.tar.gz && \
-    cd thrift-0.9.3 && \
-    ./bootstrap.sh && \
-    ./configure \
-      --without-ruby \
-      --without-perl \
-      --without-php \
-      --without-go \
-      --without-nodejs \
-      --with-openssl=/usr && \
-    make && make install
-

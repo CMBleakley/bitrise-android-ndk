@@ -13,5 +13,6 @@ RUN apt-get -y update && \
       automake \
       awscli \
       cmake \
+      boost \
       awscli && \
     apt-get -y clean

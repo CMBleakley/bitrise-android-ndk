@@ -1,4 +1,4 @@
-FROM bitriseio/android-ndk-lts:latest
+FROM bitriseio/android-ndk:latest
 
 ## Install dependencies from apt
 RUN apt-get -y update && \

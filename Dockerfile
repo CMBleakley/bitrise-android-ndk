@@ -1,4 +1,4 @@
-FROM bitriseio/android-ndk:alpha-v2018_04_19-03_20-b971
+FROM bitriseio/android-ndk:v2018_04_28-09_19-b981
 
 ## Install dependencies from apt
 RUN apt-get -y update && \

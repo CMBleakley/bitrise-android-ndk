@@ -21,4 +21,5 @@ RUN apt-get -y update && \
     curl -fL https://github.com/bitrise-io/bitrise/releases/download/1.21.0/bitrise-$(uname -s)-$(uname -m) > /usr/local/bin/bitrise && \
     bitrise setup && \
     bitrise stepman setup -c https://github.com/bitrise-io/bitrise-steplib.git && \
-    bitrise update 
+    bitrise stepman update
+

@@ -17,4 +17,3 @@ RUN apt-get -y update && \
       awscli && \
     apt-get -y clean && \
     bitrise update
-

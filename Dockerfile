@@ -15,4 +15,6 @@ RUN apt-get -y update && \
       cmake \
       libboost-all-dev \
       awscli && \
-    apt-get -y clean
+    apt-get -y clean && \
+    bitrise update
+
